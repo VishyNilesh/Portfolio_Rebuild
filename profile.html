@@ -1,213 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="body.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  </head>
-  <body data-spy = 'scroll' data-target = '.navbar' data-offset='50'>
-      <div class="top_decoration fixed-top"></div>
-      <div id="bimg">
-        <img src="backstretch.jpg" class="w-100 h-100 img-fluid" alt="image_copyright_jordy_ruiter">
-      </div>
-      <div class="carousel-caption" style="height: 435px;">
-        <h1 id=myname class="text-center">Nilesh Kumar</h1>
-        <hr>
-      </div>
-        <div class="carousel-caption" style="height: 300px; font-weight: 300;">
-          <h4 id="designation">SOFTWARE ENGINEER</h4>
-        </div>
-        <nav class ="navbar navbar-expand-sm navbar-dark sticky-top" id="stickylinks" role="navigation">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-           <span class="navbar-toggler-icon"></span>
-         </button>
-           <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
-               <li class="nav-item"> <a href="#aboutme" class="navigation nav-link active" id="a" onclick="aboutme()">ABOUT ME</a></li>
-               <li class="nav-item"> <a href="#skills" class="navigation nav-link active" id="sk" onclick="skills()">SKILLS</a></a></li>
-               <li class="nav-item"> <a href="#exp" class="navigation nav-link active" id="ex" onclick="exp()">EXPERIENCE</a></li>
-               <li class="nav-item"> <a href="#edu" class="navigation nav-link active" id="ed" onclick="edu()" >EDUCATION</a></li>
-               <li class="nav-item"> <a href="#cv" class="navigation nav-link active" id="p" onclick="por()">PORTFOLIO</a></li>
-               <li class="nav-item"> <a href="#contact" class="navigation nav-link active" id="c" onclick="cont()">CONTACT</a></li>
-           </ul>
-       </nav>
-        <div class="sub_sections_aboutme " id="aboutme">
-              <h2>ABOUT ME</h2>
-              <hr>
-              <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <img src="portfolio-final.jpeg" alt="" class="img-thumbnail">
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <h4 class="text-uppercase font-weight-bold text-left">HI, IT's Me!</h4>
-                    <p class="text-left">I like building awesome software. I've built websites, browser plugins,
-                      corporate software and even games! If you are interested, you can view some of my favorite
-                      projects in my <a href="#">portfolio</a> down below.<br><br>Need something built or simply want to have chat? Reach
-                      out to me on social media or send me an <a href="#">email</a>.</p>
-                      <div id="social_tags">
-                        <a href=https://www.twitter.com class="bi bi-twitter" style="font-size: 2rem; color: cornflowerblue;"></a>
-                        <a href=https://github.com/VishyNilesh class="bi bi-github" style="font-size: 2rem; color: cornflowerblue;"></a>
-                        <a href=https://www.linkedin.com/in/nilesh-vishwakarma-010171159/ class="bi bi-linkedin" style="font-size: 2rem; color: cornflowerblue;"></a>
-                       </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                      <h4 class="text-uppercase font-weight-bold text-left">My Personal Interests</h4>
-                      <p>When I am not coding my next project, I enjoy spending my time doing any of the following:
-                        <ul>
-                          <li>I love <strong>reading books.</strong></li>
-                          <li>I am watching my favorite game <strong>chess.</strong></li>
-                          <li>I am attending conferences virtually</li>
-                          <li>And I am <strong>meeting more people</strong> and creating new opportunities.</li>
-                        </ul>
-                      </p>
-                    </div>
-                </div>
-              </div>
-        </div>
-        <div class="sub_sections_techskills " id="skills">
-              <h2>TECHINCAL SKILLS</h2>
-              <hr>
-              <p class="text-center col-lg-12">I've worked with a wide variety of programming languages. For web applications I use PHP and Javascript. Whenever I need the most performance possible I obviously go with C++ and finally when I am building prototypes or working on my hobby projects I fall back on Python</p>
-              <br>
-              <div class="container">
-              <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <h4>PYTHON</h4>
-                </li>
-                <li class="nav-item">
-                    <h4>DJANGO</h4>
-                </li>
-                <li class="nav-item">
-                    <h4>JAVASCRIPT</h4>
-                </li>
-                <li class="nav-item">
-                    <h4>BOOTSTRAP</h4>
-                </li>
-                <li class="nav-item">
-                    <h4>MONGODB</h4>
-                </li>
-              </ul>
-            </div>
-            <h3>MOST FREQUENTLY USED TOOLS</h3>
-            <br>
-            <div class="container frameworks_engines">
-              <div class="row">
-                <div class="col-lg-6">
-                  <h4>FRAMEWORKS & ENGINES</h4>
-                  <ul>
-                    <li>Laravel</li>
-                    <li>Vue.js</li>
-                    <li>React</li>
-                    <li>Electron</li>
-                    <li>Unity Engine</li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <h4>SOFTWARES</h4>
-                  <ul>
-                    <li>Windows & Linux</li>
-                    <li>Git</li>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>MySQL</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="sub_sections_experience " id="exp">
-          <h2>WORK EXPERIENCE</h2>
-          <hr>
-          <h3>ASSISTANT SYSTEM ENGINEER</h3>
-          <p> BIG DATA<i class="bi bi-circle-fill" ></i>DATA ANALYSIS<i class="bi bi-circle-fill"></i>BACKEND DEVELOPMENT</p>
-          <br>
-          <p class="container">I've held three different positions in this company. From part-time employee to full time intern and now finally as a full time employee in the data division. I am responsible for the extraction of high quality data from the web. I develop software that extracts information from the unstructured deep web and that converts it into a structured format for further data analysis.</p>
-          <p id="ctm"> <strong>Company</strong> :<span> TCS</span>  <strong>Period</strong>: January 2019-Present</p>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-          </div>
-          <br>
-          <hr>
-        </div>
-        <h3>ASSISTANT SYSTEM ENGINEER</h3>
-        <p> BIG DATA<i class="bi bi-circle-fill" ></i>DATA ANALYSIS<i class="bi bi-circle-fill"></i>BACKEND DEVELOPMENT</p>
-        <br>
-        <p class="container">I've held three different positions in this company. From part-time employee to full time intern and now finally as a full time employee in the data division. I am responsible for the extraction of high quality data from the web. I develop software that extracts information from the unstructured deep web and that converts it into a structured format for further data analysis.</p>
-        <p id="ctm"> <strong>Company</strong> :<span> TCS</span>  <strong>Period</strong>: January 2019-Present</p>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-          <div class="col-lg-3  col-md-6 col-sm-12 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-        </div>
-        <br>
-        <hr>
-      </div>
-      <h3>ASSISTANT SYSTEM ENGINEER</h3>
-      <p> BIG DATA<i class="bi bi-circle-fill" ></i>DATA ANALYSIS<i class="bi bi-circle-fill"></i>BACKEND DEVELOPMENT</p>
-      <br>
-      <p class="container">I've held three different positions in this company. From part-time employee to full time intern and now finally as a full time employee in the data division. I am responsible for the extraction of high quality data from the web. I develop software that extracts information from the unstructured deep web and that converts it into a structured format for further data analysis.</p>
-      <p id="ctm"> <strong>Company</strong> :<span> TCS</span>  <strong>Period</strong>: January 2019-Present</p>
-        </div>
-        <div class="sub_sections_experience education " id="edu">
-          <h2>EDUCATION</h2>
-          <hr>
-          <h3>NHTV BREDA UNIVERSITY OF APPLIED SCIENCES</h3>
-          <p> BIG DATA<i class="bi bi-circle-fill" ></i>DATA ANALYSIS<i class="bi bi-circle-fill"></i>BACKEND DEVELOPMENT</p>
-          <br>
-          <p class="container">I've held three different positions in this company. From part-time employee to full time intern and now finally as a full time employee in the data division. I am responsible for the extraction of high quality data from the web. I develop software that extracts information from the unstructured deep web and that converts it into a structured format for further data analysis.</p>
-        </div>
-        <div class="favprojects sub_sections_experience " id="cv">
-          <h2>SOME OF MY FAVOURITE PROJECTS</h2>
-          <hr>
-
-          <p> BIG DATA<i class="bi bi-circle-fill" ></i>DATA ANALYSIS<i class="bi bi-circle-fill"></i>BACKEND DEVELOPMENT<i class="bi bi-circle-fill"></i>APPLICATION DEVELOPMENT</p>
-          <br>
-          <div class="container">
-          <div class="row">
-            <div class="col-lg-2  col-md-4 col-sm-6 col-xs-1 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            <div class="col-lg-2  col-md-4 col-sm-6 col-xs-1 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            <div class="col-lg-2  col-md-4 col-sm-6 col-xs-1 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            <div class="col-lg-2  col-md-4 col-sm-6 col-xs-1 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            <div class="col-lg-2  col-md-4 col-sm-6 col-xs-1 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            <div class="col-lg-2  col-md-4 col-sm-6 col-xs-1 p-3  projectsnaps"> <img src="https://www.kaiwa-projects.com/assets/img/coosto-thumb-1.png" alt=""></div>
-            </div>
-        </div>
-      </div>
-      <div class="getintotouch " id="contact">
-        <h2>LET'S GET IN TOUCH</h2>
-        <hr>
-        <p class="container">Need anything built, want to work together or simply want to have a chat?</p>
-        <p class="container">Drop me an e-mail at nileshkumar.v21@gmail.com or simply fill out the form below and I will reply to you soon!</p>
-        <form class="getintotouch_form" action="index.html" method="post">
-          <div class="form-group">
-            <input type="text" class="form-control"  placeholder="Name">
-         </div>
-         <div class="form-group">
-           <input type="email" class="form-control"  placeholder="E-mail address">
-         </div>
-         <div class="form-group">
-           <textarea class="form-control" rows="5" id="comment" placeholder="Your message"></textarea>
-               </div>
-               <div class="form-group">
-                 <input class="btn btn-info p-2" type="button" name="" value="SEND">
-               </div>
-        </form>
-        </div>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script type="text/javascript" src="bootstrap.js"></script>
-      <script type="text/javascript" src="portfolio.js"></script>
-
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nilesh | Fullstack Developer</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="line-img fixed-top">
+    <img src="" alt="">
+  </div>
+  <br class="d-block d-sm-none">
+  <br class="d-block d-sm-none">
+  <div class="first-fold-img">
+    <img src="backstretch.jpg" alt="" class="img-fluid">
+    <div class="name-text text-center">
+      <p class="my-name">Nilesh Kumar</p>  
+      <hr>
+      <p id="designation">SOFTWARE ENGINEER</p>
+    </div>
+  </div>
+  <div id="my-navigation">
+    <ul>
+      <li><a href="#home">About Me</a></li>
+      <li><a href="#news">Skills</a></li>
+      <li><a href="#contact">Experience</a></li>
+      <li><a href="#about">Education</a></li>
+      <li><a href="#contact">Portfolio</a></li>
+      <li><a href="#about">Contact</a></li>
+    </ul>
+  </div>
+</body>
 </html>

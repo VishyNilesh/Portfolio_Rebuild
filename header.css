@@ -1,0 +1,59 @@
+.line-img {
+    background-image: url("head_image.png");
+    background-repeat: repeat-x;
+}
+.first-fold-img{
+   position: relative;
+   bottom: 70px;
+}
+body::-webkit-scrollbar{
+   background: #FFFFFF;
+   border-radius: 20px;
+   width: 15px;
+}
+::-webkit-scrollbar-thumb{
+   background: grey;
+   border: 3px solid #FFFFFF;
+   border-radius: 15px;
+}
+.name-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.my-name{
+    font-size:3.750em;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    @media (max-width:400px){
+        font-size:14px;
+        padding-top:50px;
+    };
+    @media (min-width:401px) and (max-width:768px){
+        font-size:24px;
+        padding-top:50px;
+    }
+}
+.name-text hr{
+    background-color: #5b9bbc;
+    height: 2px;
+    width: 67%;
+    @media (max-width:400px){
+        margin-top:0.5rem;
+        margin-bottom:0.5rem;
+    }
+}
+#designation {
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+    @media (max-width:400px){
+        font-size:14px;
+    };
+}
