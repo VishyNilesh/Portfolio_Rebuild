@@ -29,6 +29,7 @@ body::-webkit-scrollbar{
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
+    margin-bottom: 0;
     @media (max-width:400px){
         font-size:14px;
         padding-top:50px;
@@ -38,10 +39,43 @@ body::-webkit-scrollbar{
         padding-top:50px;
     }
 }
+.my-name {
+    white-space: nowrap;
+    overflow: hidden;    
+  }
+  
+  /* Animation */
+  .my-name {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) ;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{ 
+    from{width: 0;}
+    to{width: 472px;}
+  }
+  
+  @media (max-width:556px)
+  {
+    @keyframes animated-text{ 
+        from{width: 0;}
+        to{width: 272px;}
+      }
+  }
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(91, 155, 188, 0.5);}
+    to{border-right-color: rgba(91, 155, 188, 0.1);}
+  }
 .name-text hr{
     background-color: #5b9bbc;
     height: 2px;
     width: 67%;
+    margin-top:0.25rem;
+    margin-bottom:0.25rem;
     @media (max-width:400px){
         margin-top:0.5rem;
         margin-bottom:0.5rem;
