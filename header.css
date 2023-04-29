@@ -16,6 +16,7 @@ body::-webkit-scrollbar{
    border: 3px solid #FFFFFF;
    border-radius: 15px;
 }
+/* name related css */
 .name-text{
     position: absolute;
     top: 50%;
@@ -34,7 +35,7 @@ body::-webkit-scrollbar{
         font-size:14px;
         padding-top:50px;
     };
-    @media (min-width:401px) and (max-width:768px){
+    @media (max-width:768px){
         font-size:24px;
         padding-top:50px;
     }
@@ -51,25 +52,14 @@ body::-webkit-scrollbar{
   }
   
   /* text animation */
-  
+  @media (min-width:768px)
+  {
   @keyframes animated-text{ 
     from{width: 0;}
-    to{width: 472px;}
+    to{width: 672px;}
   }
-  
-  @media (max-width:556px)
-  {
-    @keyframes animated-text{ 
-        from{width: 0;}
-        to{width: 272px;}
-      }
-  }
+}
   /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-right-color: rgba(91, 155, 188, 0.5);}
-    to{border-right-color: rgba(91, 155, 188, 0.1);}
-  }
 .name-text hr{
     background-color: #5b9bbc;
     height: 2px;
@@ -81,13 +71,45 @@ body::-webkit-scrollbar{
         margin-bottom:0.5rem;
     }
 }
+
+/* designation css */
 #designation {
     font-size: 30px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: white;
     font-weight: 100;
-    @media (max-width:400px){
-        font-size:14px;
+    @media (max-width:768px){
+        font-size:18px;
     };
+}
+
+/* base nav css*/
+#my-navigation .nav-link{
+    color: #5b9bbc;
+    text-transform: uppercase;
+}
+#my-navigation{
+    @media (max-width:768px)
+    {
+    font-size: 12px;
+}}
+@media (max-width:768px){
+#my-navigation .nav {
+    flex-wrap: unset !important;
+}
+#my-navigation .nav-link{
+    padding-right: 0px !important;
+    padding-left: 6px !important;
+}
+}
+#my-navigation .nav-link:hover{
+    color: white;
+    text-decoration: none;
+  }
+@media (min-width:1200px){
+    #my-navigation {
+        position: relative;
+        top: 240px;
+    }
 }
