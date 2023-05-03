@@ -120,10 +120,10 @@ h2{
 @media (min-width:1200px){
     #my-navigation {
         position: relative;
-        top: 230px;
+        top:240px;
     }
     #my-navigation .nav-link{
-       letter-spacing: 0.7px;
+       letter-spacing: 0.5px;
     }
 }
 /* about me section */
@@ -257,3 +257,79 @@ font-size: 12px;
 .work-exp-carousel div{
     padding-bottom: 20px !important;
 }
+.work-exp-carousel div img{
+width: 130px;
+height: 130px;
+}
+.ml-15{
+    margin-left: 15px !important;
+}
+/* education */
+.education{
+    background-color: #eee;
+}
+.fav-projects h6{
+    letter-spacing: 2px;
+}
+.fav-projects hr{
+    background: #f08b65;
+    margin-bottom: 50px;
+    height: 2px;
+    width: 25%;
+}
+.fav-project-carousel div{
+    padding-bottom: 20px !important;
+}
+@media (max-width:600px) {
+    
+.fav-project-carousel{
+    text-align: center;
+}
+}
+.fav-project-carousel div img{
+    width: 130px;
+    height: 130px;
+    }
+/* get in touch */
+.getintotouch{
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 70px;
+  }
+  .getintotouch hr{
+    margin-bottom: 50px;
+    background-color: #5b9bbc;
+    width: 336px;
+    padding: 1px;
+  }
+  .getintotouch p{
+    margin-bottom: auto;
+  }
+  form{
+    margin: auto;
+    margin-top: 12px;
+    width: 60%;
+  }
+  .getintotouch {
+    background-color: #0d2c5a;
+    color: white;
+  
+  }
+  .getintotouch .getintotouch_form .form-group:nth-of-type(4)
+  {
+    padding-bottom: 80px;
+    padding-top: 10px;
+  }
+  .getintotouch .getintotouch_form .btn {
+      width:78px;
+      background: #5b9bbc;
+  }
+  .getintotouch_form ::placeholder{
+    font-style: italic;
+  }
+  .getintotouch .getintotouch_form .form-group {
+    margin-bottom: 30px;
+  }
+  .getintotouch .getintotouch_form .form-group textarea{
+    resize: none;
+  }
